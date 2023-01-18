@@ -14,13 +14,6 @@ public class bulletUpdate : MonoBehaviour
     private Vector2 screenBounds;
 
     private float deleteBullet;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-    // Private variables.
-    // Default direction.
     Vector3 direction = new Vector3(0, 0, 1);
 
     public void SetDirection(Vector3 direction)

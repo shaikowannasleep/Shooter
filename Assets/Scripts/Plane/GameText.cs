@@ -3,20 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class GameText : MonoBehaviour
 {
-    public Text txt;
-    public static int scoreValue = 0;
+    public Text scoreText;
+   // public static int CurrentscoreValue;
+    private int score;
+    //public static int scoreValue = 0;
 
     private void Start()
     {
-        scoreValue = 0; 
-        
+        score = 0;
+        this.updateScore(0);
+      //  scoreValue = 0;
     }
-
+    public void updateScore(int scoreToAdd)
+    {
+        //score += scoreToAdd;
+       // scoreText.text = "Score: " + score;
+        //  txt.text = "Score : " + CurrentscoreValue;
+    }
 
     void Update()
     {
-        txt.text = "Score : " + scoreValue;
+       // scoreText.text = "Score: " + score.ToString();
     }
 }

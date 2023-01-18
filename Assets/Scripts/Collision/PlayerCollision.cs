@@ -5,17 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public GameController gameController;
+  
 
     void Start()
     {
      //   mybody= GetComponent<Rigidbody2D>();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +18,8 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.tag == "EnemyVip")
         {
             Destroy(gameObject);
-           gameController.GameOver();
+            GameController gameController = GameObject.Find("GameController").GetComponent<GameController>();
+            gameController.SetGameOver();
         }
     }
 
