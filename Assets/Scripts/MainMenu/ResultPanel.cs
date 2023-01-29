@@ -51,13 +51,13 @@ public class ResultPanel : MonoBehaviour
         }
         else
         {
-            GameOverTxt.text = "TRY AGAIN";
+            GameOverTxt.text = "GAME OVER";
         }
     }
 
     private void PlayAgain()
     {
-        if (GameOverTxt.text == "TRY AGAIN")
+        if (GameOverTxt.text == "GAME OVER")
         {
             SceneManager.LoadScene("MainScene");
         }
