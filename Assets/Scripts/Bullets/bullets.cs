@@ -44,7 +44,7 @@ public class bullets : MonoBehaviour
 
 
     private void OnTriggerEnter2D(Collider2D other){
-        if(other.tag == "asteroid"){
+        if(other.tag == "EnemyVip"){
             GameObject e = Instantiate(explosion) as GameObject;
             e.transform.position = transform.position;
             Destroy(other.gameObject);

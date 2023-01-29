@@ -1889,7 +1889,7 @@ GameObject:
   - component: {fileID: 1730311896}
   m_Layer: 0
   m_Name: EnemySpawn
-  m_TagString: Untagged
+  m_TagString: EnemyVip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2056,8 +2056,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2052022397
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 680998143, guid: 0e248879052e13e479276be67455cf8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2079,7 +2079,7 @@ Transform:
   m_GameObject: {fileID: 1749222166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.11, y: -4.36, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b0738fcd81ed74ea95c9e09fdfb1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 3146511510645123429, guid: 401628912096fe5449f57ffc9f28c2ee, type: 3}
+  bullet: {fileID: 3146511510645123429, guid: 685eb868023c14045b8259941714681b, type: 3}
   delaytime: 0.1
 --- !u!114 &1749222176
 MonoBehaviour:
@@ -2524,7 +2524,7 @@ GameObject:
   - component: {fileID: 1914032573}
   m_Layer: 0
   m_Name: Spawn
-  m_TagString: Untagged
+  m_TagString: EnemyVip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2860,7 +2860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: e45199d4864378b4d956ec82f205a321, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2900,7 +2900,6 @@ GameObject:
   - component: {fileID: 2072979667}
   - component: {fileID: 2072979666}
   - component: {fileID: 2072979671}
-  - component: {fileID: 2072979665}
   - component: {fileID: 2072979664}
   - component: {fileID: 2072979672}
   m_Layer: 0
@@ -2909,7 +2908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2072979664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2923,23 +2922,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3146511510645123429, guid: 685eb868023c14045b8259941714681b, type: 3}
-  delaytime: 0.06
+  delaytime: 1.25
   Direction: 0
   spawnPoint1: {fileID: 1178321983}
---- !u!114 &2072979665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072979663}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b0738fcd81ed74ea95c9e09fdfb1a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 3146511510645123429, guid: 401628912096fe5449f57ffc9f28c2ee, type: 3}
-  delaytime: 0.1
 --- !u!50 &2072979666
 Rigidbody2D:
   serializedVersion: 4
@@ -3073,8 +3058,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072979663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.04, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -1.15, y: -4.5, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1178321983}
