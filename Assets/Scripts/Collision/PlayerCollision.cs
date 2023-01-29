@@ -5,30 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
-  
-
-    void Start()
+      public void OnTriggerEnter2D(Collider2D collision)
     {
-     //   mybody= GetComponent<Rigidbody2D>();
-
-    }
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "EnemyVip")
+        if (collision.gameObject.tag == "EnemyVip" &&gameObject.tag == "Player") 
         {
             Destroy(gameObject);
             GameController gameController = GameObject.Find("GameController").GetComponent<GameController>();
             gameController.SetGameOver();
-        }
-    }
-
-
-    IEnumerator ReloadCurrentScene()
-    {
-        yield return new WaitForSeconds(3.0f);
-        SceneManager.LoadScene(0);
-    }
-
+        } 
+        else if (collision.gameObject.tag == "EnemyVip" && gameObject.tag == "PlayerAuto")
+        {Destroy(gameObject);}
+      }
+    
 
 }

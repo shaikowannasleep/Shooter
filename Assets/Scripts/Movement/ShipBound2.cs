@@ -12,7 +12,7 @@ public class ShipBound2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-          screenBounds = MainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, MainCamera.transform.position.z));
+        screenBounds = MainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, MainCamera.transform.position.z));
         planeWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x; //extents = size of width / 2
         planeHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y; //extents = size of height / 2
     }
