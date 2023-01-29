@@ -28,7 +28,8 @@ public class EnemyColision : MonoBehaviour
             if (this.currentHp <= 0.0f)
             {
                 DestroyNow();
-                GameController gameController = GameObject.Find("GameController").GetComponent<GameController>();
+                GameController gameController = GameObject
+                    .Find("GameController").GetComponent<GameController>(); 
                 gameController.AddScore();
             }
         }

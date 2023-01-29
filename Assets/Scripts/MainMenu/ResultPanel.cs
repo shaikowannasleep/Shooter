@@ -59,7 +59,7 @@ public class ResultPanel : MonoBehaviour
     {
         if (GameOverTxt.text == "TRY AGAIN")
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("MainScene");
         }
         else if (GameOverTxt.text == "NEXT LEVEL")
         {
@@ -83,12 +83,5 @@ public class ResultPanel : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
         
-    }
-
-  
 }

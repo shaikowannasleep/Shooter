@@ -119,7 +119,6 @@ public class GameController : MonoBehaviour
 
     public void PauseGame()
     {
-        isPause = true;
         pauseBtn.SetActive(false);
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -130,6 +129,7 @@ public class GameController : MonoBehaviour
         pauseMenu.SetActive(false);
         pauseBtn.SetActive(true);
         Time.timeScale = 1f;
+
     }
 
     public void GameOver()
@@ -145,7 +145,6 @@ public class GameController : MonoBehaviour
     }
 
     public void ReloadScene() {
-
         SceneManager.LoadScene("MainScene");
         Time.timeScale = 1f;
     }
