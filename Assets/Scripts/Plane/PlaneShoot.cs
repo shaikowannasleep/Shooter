@@ -15,8 +15,6 @@ public class PlaneShoot : MonoBehaviour
         mybody = GetComponent<Rigidbody2D>();
     }
 
-    
-
     // Update is called once per frame
     void FixedUpdate()
     {

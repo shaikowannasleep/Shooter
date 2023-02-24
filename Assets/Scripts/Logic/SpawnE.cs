@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class SpawnE : MonoBehaviour
@@ -7,6 +9,10 @@ public class SpawnE : MonoBehaviour
 
     [SerializeField] private GameObject enemies;
     private BoxCollider2D box;
+    [SerializeField] float posMin = -2.0f;
+    [SerializeField] float posMax = -5.0f;
+    float speed = 0.25f;
+    private Vector2 boxPos = new Vector2();
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +23,12 @@ public class SpawnE : MonoBehaviour
     void Awake()
     {
         box = GetComponent<BoxCollider2D>();
+    }
+
+    private void Update()
+    {
+       // boxPos.y = Random.Range(posMin, posMax);
+      //  transform.Translate(Vector2.down* speed* Time.deltaTime);
     }
 
     IEnumerator SpawnEnemy() {

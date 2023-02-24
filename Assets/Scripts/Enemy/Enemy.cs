@@ -11,7 +11,8 @@ public class Enemy : MonoBehaviour
     [Header("Movement direction")]
     [SerializeField]
     Vector2 direction = new Vector2(0f, -1);
-
+    [SerializeField]
+    Vector2 horizontalDirection = new Vector2(1, -1);
   
     // Private variables.
     float speed;
@@ -27,13 +28,13 @@ public class Enemy : MonoBehaviour
     void Move()
     {
        // transform.Translate(Vector2.down * speed * Time.deltaTime);
-
     }
 
     void Update()
     {
-       //Move();
-        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        //Move();
+        //  transform.Translate(Vector2.down * speed * Time.deltaTime);
+        transform.Translate(horizontalDirection * speed * Time.deltaTime);
         CheckArea();
     }
 
