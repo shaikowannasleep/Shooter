@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Bullets\bullets.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Plane\PlaneShoot.cs" />
+    <Compile Include="Assets\Scripts\Soundtrack\DontDestroyAudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
