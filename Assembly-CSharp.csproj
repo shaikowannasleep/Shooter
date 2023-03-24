@@ -65,18 +65,20 @@
     <Compile Include="Assets\Scripts\MainMenu\MenuController.cs" />
     <Compile Include="Assets\Scripts\Bullets\bulletUpdate.cs" />
     <Compile Include="Assets\Scripts\TimeCounter.cs" />
+    <Compile Include="Assets\Scripts\Soundtrack\DontDestroyAudio.cs" />
     <Compile Include="Assets\Scripts\Collision\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\Plane\planeAutoShoot.cs" />
     <Compile Include="Assets\Scripts\Collision\EnemyColision.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ResultPanel.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Bullets\Weapon.cs" />
     <Compile Include="Assets\Scripts\Background\bgScroll.cs" />
     <Compile Include="Assets\Scripts\Movement\ShipBound2.cs" />
     <Compile Include="Assets\Scripts\Background\bgScale.cs" />
     <Compile Include="Assets\Scripts\Bullets\bullets.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Plane\PlaneShoot.cs" />
-    <Compile Include="Assets\Scripts\Soundtrack\DontDestroyAudio.cs" />
+    <Compile Include="Assets\Scripts\Bullets\PlayerSingleBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

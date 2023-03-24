@@ -34,7 +34,7 @@ public class ResultPanel : MonoBehaviour
        // gameOverImage.SetActive(!winStatus);
         //victoryImage.SetActive(winStatus);
         resultScoreText.text = "Score: " + score;
-        Debug.Log(score+ " " + playTime);
+      //  Debug.Log(score+ " " + playTime);
         int TotalHours = Mathf.FloorToInt(playTime / 3600);
         int Minutes = Mathf.FloorToInt(playTime / 60);
         int Seconds = Mathf.FloorToInt(playTime - Minutes * 60f);
