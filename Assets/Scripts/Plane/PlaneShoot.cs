@@ -9,7 +9,7 @@ public class PlaneShoot : MonoBehaviour
     [SerializeField] private float delaytime;
     private Rigidbody2D mybody;
     private bool canShoot = true ;
-    
+    [SerializeField] AudioSource audioSource;
     void Awake()
     {
         mybody = GetComponent<Rigidbody2D>();
@@ -30,13 +30,17 @@ public class PlaneShoot : MonoBehaviour
 
     IEnumerator Shoot()
     {
+        
         Vector3 temp = transform.position;
         temp.y += 0.5f;
         canShoot = false;
         Instantiate(bullet,temp, Quaternion.identity);
+        audioSource.Play();
         yield return new WaitForSeconds(delaytime);
          canShoot = true;
+       
+
     }
 
- 
+
 }
