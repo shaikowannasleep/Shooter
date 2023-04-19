@@ -738,7 +738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613999232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.91, y: 4.29, z: -9.913095}
+  m_LocalPosition: {x: -1.18, y: 4.29, z: -9.913095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2358,7 +2358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1730311896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,6 +2371,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a999816686c4d43b40b3c2614c7ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabEnemies:
+  - {fileID: 8204186363010409471, guid: b177bba88b35df442bd81fb80a2a0fb0, type: 3}
+  startDelay: 3
+  intervalMin: 1
+  intervalMax: 3
+  countMin: 2
+  countMax: 5
+  spawnArea: {x: 2, y: 1}
 --- !u!4 &1730311897
 Transform:
   m_ObjectHideFlags: 0
@@ -2378,14 +2386,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730311895}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 4.19, z: 0}
+  m_LocalRotation: {x: -0.009102965, y: 0.9867012, z: 0.059484687, w: 0.15099522}
+  m_LocalPosition: {x: 0.3, y: 3.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -6.9, y: 162.599, z: 0}
 --- !u!1 &1749222166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,7 +3298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1914032573
 MonoBehaviour:
   m_ObjectHideFlags: 0

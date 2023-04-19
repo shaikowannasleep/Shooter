@@ -38,8 +38,6 @@ public class PlaneShoot : MonoBehaviour
         audioSource.Play();
         yield return new WaitForSeconds(delaytime);
          canShoot = true;
-       
-
     }
 
 

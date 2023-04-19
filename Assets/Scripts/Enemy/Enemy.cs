@@ -13,21 +13,21 @@ public class Enemy : MonoBehaviour
     Vector2 direction = new Vector2(0f, -1);
     [SerializeField]
     Vector2 horizontalDirection = new Vector2(1, -1);
-  
+
     // Private variables.
     float speed;
     Vector2 hiddenPosition;
 
     public void Start()
-    {   
+    {
         this.hiddenPosition = transform.position;
-        this.speed = Random.Range(speedMin, speedMax); 
+        this.speed = Random.Range(speedMin, speedMax);
     }
 
 
     void Move()
     {
-       // transform.Translate(Vector2.down * speed * Time.deltaTime);
+        // transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
 
     void Update()
