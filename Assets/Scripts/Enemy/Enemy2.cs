@@ -2,57 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Enemy
-/// This class implements an enemy.
-/// </summary>
 public class Enemy2 : MonoBehaviour
 {
-    enum MovementType
-    {
-        Straight,
-        Zigzag,
-        ToPlayer,
-        Circle,
-    }
 
-    [Header("Movement speed")]
-    [Space(20)]
-    [SerializeField]
-    float speedMin = 2.0f;
-    [SerializeField]
-    float speedMax = 5.0f;
+    [SerializeField] float speedMin = 2.0f;
+    [SerializeField] float speedMax = 5.0f;
 
     [Header("Movement direction")]
     [SerializeField]
     Vector2 direction = new Vector2(0f, -1);
-
-    [Header("Movement type")]
     [SerializeField]
-    MovementType movementType;
-
-    [Header("Enemy Scale")]
-    [SerializeField]
-    float scaleMin = 1.0f;
-
-    [SerializeField]
-    float scaleMax = 1.5f;
+    Vector2 horizontalDirection = new Vector2(1, -1);
 
     // Private variables.
     float speed;
     Vector2 hiddenPosition;
 
     public void Start()
-    {   
+    {
         this.hiddenPosition = transform.position;
-        this.speed = Random.Range(speedMin, speedMax); 
+        this.speed = Random.Range(speedMin, speedMax);
     }
 
 
+    void Move()
+    {
+        // transform.Translate(Vector2.down * speed * Time.deltaTime);
+    }
 
     void Update()
     {
         //Move();
+        //  transform.Translate(Vector2.down * speed * Time.deltaTime);
+        transform.Translate(horizontalDirection * speed * Time.deltaTime);
         CheckArea();
     }
 

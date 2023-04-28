@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 5967260875580636041}
   - component: {fileID: 5967260875580636038}
   - component: {fileID: 5967260875580636039}
-  - component: {fileID: 5967260875580636043}
-  - component: {fileID: 8204186363010409471}
   - component: {fileID: -3299464585893368417}
+  - component: {fileID: 6431671815442193526}
   m_Layer: 0
   m_Name: EnemyType2
   m_TagString: EnemyVip
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 2052022397
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -350338074, guid: 9ee0467288052a04195e5212a793fffa, type: 3}
+  m_Sprite: {fileID: 914775415, guid: 9ee0467288052a04195e5212a793fffa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +105,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5777778, y: 0.5555556}
+    oldSize: {x: 0.5777778, y: 0.6666667}
     newSize: {x: 2.4, y: 2.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -136,38 +135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5967260875580636043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5967260875580636037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98386e8ef24462e42859327e2af04af6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 3146511510645123429, guid: c77a15780ac1f9b419ce4ddb06e8677c, type: 3}
-  delaytime: 0.5
-  Direction: 0
-  spawnPoint1: {fileID: 5967260875580636040}
---- !u!114 &8204186363010409471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5967260875580636037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3c667d99154fe4fb8bcbb21fd794fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedMin: 2
-  speedMax: 4
-  direction: {x: 0, y: -1}
-  horizontalDirection: {x: 1, y: 0}
 --- !u!114 &-3299464585893368417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,3 +148,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 1
+  prefabExplosion: {fileID: 3314878112733434478, guid: 0895828ccd98c5e4b9f731d2dd33801b, type: 3}
+--- !u!114 &6431671815442193526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5967260875580636037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c667d99154fe4fb8bcbb21fd794fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMin: 2
+  speedMax: 5
+  direction: {x: 0, y: 1}
+  movementType: 2
+  scaleMin: 1
+  scaleMax: 1.5

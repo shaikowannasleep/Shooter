@@ -168,7 +168,9 @@ MonoBehaviour:
   speedMin: 2
   speedMax: 6
   direction: {x: 0, y: 1}
-  horizontalDirection: {x: 0, y: 1}
+  movementType: 0
+  scaleMin: 1
+  scaleMax: 1.5
 --- !u!114 &-3299464585893368417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 1
+  prefabExplosion: {fileID: 3314878112733434478, guid: 0895828ccd98c5e4b9f731d2dd33801b, type: 3}
 --- !u!95 &4898176690278715659
 Animator:
   serializedVersion: 4

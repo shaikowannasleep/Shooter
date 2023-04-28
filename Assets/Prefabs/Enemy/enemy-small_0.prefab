@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4717088355283023594}
   m_Layer: 0
   m_Name: enemy-small_0
-  m_TagString: Untagged
+  m_TagString: EnemyVip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 108090919, guid: 63e256ac4e7c1334d83090ec2109fad3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.004808031, y: -0.0064251795}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.16, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.32, y: 0.16}
     newSize: {x: 0.32, y: 0.16}
@@ -149,8 +149,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMin: 2
   speedMax: 5
-  direction: {x: 0, y: -1}
-  horizontalDirection: {x: 1, y: -1}
+  direction: {x: 0, y: 1}
+  movementType: 0
+  scaleMin: 1
+  scaleMax: 1.5
 --- !u!114 &-4717088355283023594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,3 +166,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 2
+  prefabExplosion: {fileID: 3314878112733434478, guid: 0895828ccd98c5e4b9f731d2dd33801b, type: 3}

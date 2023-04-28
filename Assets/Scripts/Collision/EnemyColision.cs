@@ -9,7 +9,9 @@ public class EnemyColision : MonoBehaviour
     [SerializeField] float maxHp = 2;
 
     private float currentHp;
-   
+  //  [Header("Prefab explosion")]
+   // [SerializeField]
+   // GameObject prefabExplosion;
 
 
     public void Start()
@@ -38,6 +40,8 @@ public class EnemyColision : MonoBehaviour
 
     private void DestroyNow()
     {
+        // Instantiate the destroy effect.
+       // GameObject.Instantiate(this.prefabExplosion, transform.position, Quaternion.identity); 
         Destroy(gameObject);
 
     }
